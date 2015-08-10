@@ -1,0 +1,7 @@
+development:
+ adapter: postgresql
+ port: 5432
+ username: rails_training
+ password: password
+ database: rails_dev
+ 

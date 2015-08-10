@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Rails Workshop </title>
+</head>
+<body>
+<h1>Welcome to Rails workshop</h1>
+<h3>listing users</h3>
+
+<%= link_to "create user",new_user_path %>
+
+
+<% @users.each do |user| %>
+
+<table border="border" cellpadding="10" cellspacing="0">
+<tr>
+
+
+<th>First Name</th>
+<th>Last Name</th>
+<th>Designation</th>
+<th>Origin</th>
+</tr>
+<tr>
+
+
+<td> <%=user.firstname%>	</td>
+<td> <%=user.lastname%>	</td>
+<td> <%=user.designation%>	</td>
+<td> <%=user.origin%>	</td>
+
+	
+
+</tr>
+</table>
+<%end%> </br>
+
+
+</body>
+</html>
